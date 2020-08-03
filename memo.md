@@ -36,3 +36,16 @@ Route::get('/sample', 'SampleController@index');
 
 ディレクトリー  
 `database/migrations`
+
+マイグレーションファイルの作成
+`php artisan make:migration create_posts_table --create=table-name`
+
+## DB
+### モックデータ作成
+
+`php artisan make:seeder table-name-Seeder`
+
+`/database/seeds`フォルダー直下に上記のソースが作成される。
+
+以下のコマンドで適応  
+`php artisan db:seed --class=table-name-Seeder`
